@@ -29,6 +29,7 @@ namespace Employee_System
             services.AddControllers();
 
             services.AddSingleton<IEmployeeData,MockEmployeeData>();
+            services.AddSingleton<IStudentData,MockStudentData>();
             services.AddSingleton<IContactData,MockContactData>();
         }
 
