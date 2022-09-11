@@ -29,6 +29,7 @@ namespace Employee_System
             services.AddControllers();
 
             services.AddSingleton<IEmployeeData,MockEmployeeData>();
+            services.AddSingleton<IContactData,MockContactData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
